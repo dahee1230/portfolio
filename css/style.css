@@ -101,7 +101,7 @@ header nav ul li a {
   position: relative;
 }
 
-header nav ul li.active a:after {
+header nav ul li a.active:after {
   content: '';
   display: block;
   width: 14px;

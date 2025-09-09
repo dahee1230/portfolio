@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>옥다희의 포토폴리오</title>
+    <meta name="description" content="Resonance is a full-service studio creating beautiful digital experiences. We are an awards-winning team specializing in design and engineering.">
+    
+    <!-- SUIT Korean Font -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <span class="logo-icon">+</span>
+                <span class="logo-text">Reso</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <select class="language-select">
+                    <option value="en">En</option>
+                </select>
+                <button class="btn-outline">Get In Touch</button>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-shape"></div>
+            <div class="dot-pattern dot-pattern-1"></div>
+            <div class="dot-pattern dot-pattern-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">The Resonance<br>Website Template</h1>
+                    <p class="hero-subtitle">Resonance is a full-service studio creating beautiful digital experiences. We are an awards-winning team specializing in design and engineering.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Start a Project</button>
+                        <a href="#about" class="btn-link">Learn more →</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="circle-image">
+                        <img src="./img/KakaoTalk_20250909_142719036.jpg" alt="Two women discussing business">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <button class="scroll-btn">
+                    <span class="scroll-icon">↓</span>
+                    <span class="scroll-text">Scroll Down</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Studio</span>
+                <h2 class="section-title">The best way to create stunning layouts for your website.</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat.</p>
+                    <p>Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor integer lectus. Praesent sed nisi eleifend, fermentum orci lorem amet, iaculis libero lorem. Donec vel ultrices purus lorem ipsum sit amet.</p>
+                </div>
+                <div class="about-images">
+                    <div class="image-grid">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-1.jpeg" alt="About image 1">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-2.jpeg" alt="About image 2">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-3.jpeg" alt="About image 3">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-4.jpeg" alt="About image 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <div class="achievements-header">
+                <h2>Check recent achievements.</h2>
+                <p>We provide the effective ideas that grow businesses of our clients.</p>
+                <button class="btn-primary">View Services</button>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">28%</div>
+                    <p class="stat-text">Recent tincidunt lacus sed enim posuere posuere nulla acusan.</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <p class="stat-text">Pellentesque pharetra libero eget vestibulum ullamcorper.</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1.5k</div>
+                    <p class="stat-text">Curabitur eu quam auctor nuca convallis metus nec feugia.</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2x</div>
+                    <p class="stat-text">Suspendisse a scelerisque vitae rutrum posuere sec lacus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">We provide the best design solutions for our clients.</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida phasellus vitae pharetra ligula.</p>
+            </div>
+            <div class="services-content">
+                <div class="services-tabs">
+                    <button class="tab-btn active" data-tab="branding">Branding</button>
+                    <button class="tab-btn" data-tab="uiux">UI/UX Design</button>
+                    <button class="tab-btn" data-tab="development">Web Development</button>
+                    <button class="tab-btn" data-tab="marketing">Marketing</button>
+                </div>
+                <div class="services-panels">
+                    <div class="tab-panel active" id="branding">
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3>Branding</h3>
+                                <p>Mauris porttitor ante ut cursus proin purus, semper et risus at dignissi.</p>
+                            </div>
+                            <div class="service-image">
+                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-1.jpg" alt="Branding service">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="uiux">
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3>UI/UX Design</h3>
+                                <p>Sed ut lacus a sem varius dictum sed eget augue. Nullam vitae tristique libero.</p>
+                            </div>
+                            <div class="service-image">
+                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-2.jpg" alt="UI/UX Design service">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="development">
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3>Web Development</h3>
+                                <p>Pellentesque enim nisi, porta quis orci eu, vulputate lorem ipsum eleifend tortor.</p>
+                            </div>
+                            <div class="service-image">
+                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-3.jpg" alt="Web Development service">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="marketing">
+                        <div class="service-content">
+                            <div class="service-text">
+                                <h3>Marketing</h3>
+                                <p>Orsi varius natoque penatibus et magnis dis parturient montes, ridiculus mus.</p>
+                            </div>
+                            <div class="service-image">
+                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-4.jpg" alt="Marketing service">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-cta">
+                <div class="cta-content">
+                    <div class="cta-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-6.jpg" alt="Services CTA">
+                    </div>
+                    <div class="cta-text">
+                        <p>Looking for exclusive creative services? Contact us and get free online consultation for your brand or your client's brand.</p>
+                        <button class="btn-primary">See all Services</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Portfolio</span>
+                <div class="portfolio-title-wrapper">
+                    <h2 class="section-title animated-title">Made with love</h2>
+                </div>
+                <p class="section-description">In auctor ex id urna faucibus porttitor. In feugiat maximus nibh, id sodales mauris interdum at. Etiam eget lorem odio. Duis scelerisque metus ac velit mattis, nec ultrices turpis posuere.</p>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2023/12/project-1.jpeg" alt="Medium Scene">
+                        <div class="portfolio-overlay">
+                            <h3>Medium Scene</h3>
+                            <p>Lightbox</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-2.jpg" alt="Rise of Design">
+                        <div class="portfolio-overlay">
+                            <h3>Rise of Design</h3>
+                            <p>External Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-3.jpg" alt="Visual Stranger">
+                        <div class="portfolio-overlay">
+                            <h3>Visual Stranger</h3>
+                            <p>External Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="development">
+                    <div class="portfolio-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-4.jpg" alt="Amplitude">
+                        <div class="portfolio-overlay">
+                            <h3>Amplitude</h3>
+                            <p>External Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-5.jpg" alt="Super Awards">
+                        <div class="portfolio-overlay">
+                            <h3>Super Awards</h3>
+                            <p>External Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-6.jpg" alt="Design System">
+                        <div class="portfolio-overlay">
+                            <h3>Design System</h3>
+                            <p>Lightbox</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <p>Like our creative works? Contact us and get free online consultation for your brand.</p>
+                <button class="btn-primary">See all works</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Three Simple Steps to Succeed at Design</h2>
+                <p class="section-description">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor integer lectus. Praesent sed nisi eleifend, fermentum orci lorem amet, iaculis libero lorem. Sed lacinia quam eu velit eleifend lorem ipsum elementum laoreet.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">Step 1</div>
+                    <h3>Research</h3>
+                    <p>Integer commodo mi ut velit bibendum eleifend. Duis nulla lectus, pharetra eu rhoncus id, pharetra ut turpis.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">Step 2</div>
+                    <h3>Implementation</h3>
+                    <p>Donec maximus, dolor a condimentum congue, tellus nisi dictum magna, ut viverra massa ex sit amet nulla.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">Step 3</div>
+                    <h3>Production</h3>
+                    <p>Curabitur efficitur, nibh sed vestibulum facilisis, libero lacus accumsan erat, quis ultrices risus urna a lectus.</p>
+                </div>
+            </div>
+            <div class="video-section">
+                <div class="video-placeholder">
+                    <button class="play-btn">▶</button>
+                    <div class="video-info">
+                        <h3>Play Showreel</h3>
+                        <p>1 min. 27 sec.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <span class="section-label">Latest News</span>
+                    <h2>Check the latest news about our company in our blog.</h2>
+                    <p>Praesent venenatis justo in ultrices tempor. Donec maximus, dolor a condimentum congue, tellus nisi dictum magna, ut viverra massa ex sit amet nulla. Duis lobortis nisl sed aliquam sollicitudin.</p>
+                </div>
+                <div class="newsletter-form">
+                    <h3>Stay informed with our weekly newsletter.</h3>
+                    <h4>Subscribe our Newsletter</h4>
+                    <p>News, free stuff and products updates</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email Address *" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                    <p class="form-note">By sending the form you agree to the Terms & Conditions and Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">Resonance template is trusted by 10,000+ customers.</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <p class="testimonial-text">"A remarkable model, everything has been thought out with talent, the design, the responsiveness, the various adaptations."</p>
+                    <div class="testimonial-author">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/user-3.jpg" alt="Peter Braun">
+                        <div class="author-info">
+                            <h4>Peter Braun</h4>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Love it. Found it easy to get my site up and running. Amazing product!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2023/02/team-3.jpg" alt="Leeseit">
+                        <div class="author-info">
+                            <h4>Leeseit</h4>
+                            <p>Boldway Lda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Beautiful, flexible theme. Much more robust than what I needed for this project, but so chic I couldn't resist."</p>
+                    <div class="testimonial-author">
+                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2023/02/team-1.jpg" alt="Sergio Whun">
+                        <div class="author-info">
+                            <h4>Sergio Whun</h4>
+                            <p>Company / CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-nav">
+                <button class="nav-dot active" data-slide="0"></button>
+                <button class="nav-dot" data-slide="1"></button>
+                <button class="nav-dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Marketing Jumpstart for Your Business</h2>
+                <p>The marketing audit is generally conducted by a third person, not a member of an organization.</p>
+                <button class="btn-primary">Contact Us</button>
+            </div>
+            <div class="business-types">
+                <div class="business-type">Business to business</div>
+                <div class="business-type">Business to customer</div>
+                <div class="business-type">Non-profit business</div>
+                <div class="business-type">Ecommerce</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact Us</span>
+                <h2 class="section-title">Say hello, and we'll start productive cooperation.</h2>
+                <p class="section-description">Quisque semper nisl et mi tincidunt, at vulputate nunc tincidunt. Mauris a sapien nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>Envato Pty Ltd, PO Box 16122 Collins Street, West Victoria.</p>
+                        <a href="https://goo.gl/maps/7Vw1PBhxx5BaXStr8" target="_blank">See map</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>support@example.com</p>
+                        <a href="mailto:support@example.com">Say hello</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>+61 383 767 284</p>
+                        <a href="tel:+61383767284">Call now</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <p>Drop us a line to get your next project started. We'd love to hear from you.</p>
+                    <form>
+                        <input type="text" placeholder="Name *" required>
+                        <input type="email" placeholder="Email *" required>
+                        <textarea placeholder="Message" rows="5"></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                    <p class="form-note">All the fields are required. By sending the form you agree to the Terms & Conditions and Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal & Press</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <a href="https://themeforest.net/user/treethemes/portfolio" target="_blank">Treethemes</a> 2024. Based in London, United Kingdom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

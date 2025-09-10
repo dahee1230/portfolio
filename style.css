@@ -1,3 +1,24 @@
+:root {
+  /* Colors */
+  --violet-500: hsl(261.1, 83.1%, 57.8%);
+  --pink-500: hsl(328.4, 85.5%, 70.2%);
+  --blue-50: hsl(214.3, 31.8%, 91.4%);
+  --slate-50: hsl(210, 20%, 98%);
+  --pink-50: hsl(327.3, 73.3%, 97.1%);
+  --violet-50: hsl(250, 100%, 97.6%);
+  --pink-30: hsl(329, 100%, 85%);
+  --gray-900: hsl(210, 25%, 7.8431%);
+  --gray-600: hsl(210, 7.1%, 42.7%);
+  --gray-500: hsl(210, 3.6%, 46.1%);
+  --gray-100: hsl(210, 20%, 95.9%);
+  --white: hsl(0, 0%, 100%);
+
+    /* Gradients */
+  --gradient-primary: linear-gradient(350deg, var(--pink-30), var(--white));
+  --gradient-background: linear-gradient(135deg, var(--slate-50) 0%, var(--pink-50) 50%, var(--violet-50) 100%);
+}
+
+
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -87,8 +108,8 @@ img {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #667eea;
-  color: #667eea;
+  border: 2px solid #ffc6e4;
+  color: var(--gradient-primary);
   padding: 0.8rem 1.5rem;
   border-radius: 50px;
   font-family: 'SUIT', sans-serif;
@@ -98,7 +119,7 @@ img {
 }
 
 .btn-outline:hover {
-  background: #667eea;
+  background: #ffc6e4;
   color: white;
 }
 
@@ -128,10 +149,11 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 .nav-logo {
@@ -149,7 +171,6 @@ img {
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -171,7 +192,7 @@ img {
 }
 
 .nav-link:hover {
-  color: #667eea;
+  color: #ffc6e4;
 }
 
 .nav-actions {
@@ -333,7 +354,7 @@ img {
   gap: 0.5rem;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.8);
-  color: #333;
+  color: #f472b6;
   padding: 0.8rem 1.5rem;
   border-radius: 50px;
   font-family: 'SUIT', sans-serif;
@@ -354,13 +375,11 @@ img {
 /* Section Labels */
 .section-label {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  color: #f472b6;
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 4.5rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
@@ -382,9 +401,8 @@ img {
 }
 
 /* About Section */
-.about {
-  padding: 6rem 0;
-  background: #fff;
+.about , .about-text{
+  padding: 2rem 0;
 }
 
 .about-content {
@@ -396,6 +414,17 @@ img {
 
 .about-text p {
   margin-bottom: 1.5rem;
+}
+
+.about-resume {
+    width: 75%;
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffc6e42f;
+    border-radius: 20px;
 }
 
 .image-grid {

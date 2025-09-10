@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>옥다희의 포토폴리오</title>
-    <meta name="description" content="Resonance is a full-service studio creating beautiful digital experiences. We are an awards-winning team specializing in design and engineering.">
-    
-    <!-- SUIT Korean Font -->
+    <meta name="description" content="옥다희의 포트폴리오 - 디지털 경험과 디자인, 웹 개발, 디자인">
+    <meta name="keywords" content="포트폴리오, 웹디자인, 개발, 옥다희, 디지털, 디자인, 프론트엔드, 웹사이트">
+    <meta name="author" content="옥다희">
+    <meta name="robots" content="index , follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="옥다희의 포토폴리오">
+    <meta property="og:description" content="디지털 경험과 디자인, 웹 개발자 옥다희의 포토폴리오입니다.">
+    <meta property="og:image" content="img/KakaoTalk_20250909_142719036.jpg">
+    <meta property="og:url" content="https://your-portfolio-url.com">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./favicon/favicon.ico">
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
     
+    <title>옥다희의 포토폴리오</title>
     <!-- GSAP Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-    
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
+
         <nav class="nav">
             <div class="nav-logo">
-                <span class="logo-icon">+</span>
-                <span class="logo-text">Reso</span>
+                <!-- <span class="logo-icon"></span> -->
             </div>
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <select class="language-select">
-                    <option value="en">En</option>
-                </select>
-                <button class="btn-outline">Get In Touch</button>
+
+                <button class="btn-outline">Contact</button>
             </div>
             <button class="mobile-menu-btn">
                 <span></span>
@@ -48,6 +58,7 @@
     </header>
 
     <!-- Hero Section -->
+     
     <section class="hero">
         <div class="hero-bg">
             <div class="gradient-shape"></div>
@@ -57,8 +68,8 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">The Resonance<br>Website Template</h1>
-                    <p class="hero-subtitle">Resonance is a full-service studio creating beautiful digital experiences. We are an awards-winning team specializing in design and engineering.</p>
+                    <h1 class="hero-title">신입 디자이너<br>옥다희입니다</h1>
+                    <p class="hero-subtitle">소개말</p>
                     <div class="hero-buttons">
                         <button class="btn-primary">Start a Project</button>
                         <a href="#about" class="btn-link">Learn more →</a>
@@ -66,7 +77,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="circle-image">
-                        <img src="./img/KakaoTalk_20250909_142719036.jpg" alt="Two women discussing business">
+                        <img src="https://placehold.co/600x400" alt="Two women discussing business">
                     </div>
                 </div>
             </div>
@@ -80,26 +91,41 @@
     </section>
 
     <!-- About Section -->
+
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">About Studio</span>
-                <h2 class="section-title">The best way to create stunning layouts for your website.</h2>
+                <span class="section-label">About Me</span>
+                <div class="about">
+                    <h3>INFO</h3>
+                    <p><strong>옥다희 / Ok Da Hee</strong></p>
+                    <p>서울시 은평구 거주</p>
+                    <p>1992. 12. 30</p>
+                </div>
+                <div class="about-text">
+                    <h3>EDUCATION</h3>
+                    <p><strong>0000.01 ~ 0000.12</strong></p>
+                    <p>챗GPT 생성형 AI를 활용한 반응형 웹콘텐츠(영상제작&코딩) 개발기획자 양성과정 수료</p>
+                    <p><strong>0000.01 ~ 0000.12</strong></p>
+                    <p>경력사항 기재</p>
+                </div>
+                <div class="about-text">
+                    <h3>PROGRAMS</h3>
+                    <p><strong>0000.01 ~ 0000.12</strong></p>
+                    <p>챗GPT 생성형 AI를 활용한 반응형 웹콘텐츠(영상제작&코딩) 개발기획자 양성과정 수료</p>
+                    <p><strong>0000.01 ~ 0000.12</strong></p>
+                    <p>경력사항 기재</p>
+                </div>
             </div>
             <div class="about-content">
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat.</p>
-                    <p>Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor integer lectus. Praesent sed nisi eleifend, fermentum orci lorem amet, iaculis libero lorem. Donec vel ultrices purus lorem ipsum sit amet.</p>
-                </div>
+
                 <div class="about-images">
                     <div class="image-grid">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-1.jpeg" alt="About image 1">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-2.jpeg" alt="About image 2">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-3.jpeg" alt="About image 3">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-4.jpeg" alt="About image 4">
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -138,7 +164,9 @@
             <div class="section-header">
                 <span class="section-label">Our Services</span>
                 <h2 class="section-title">We provide the best design solutions for our clients.</h2>
-                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida phasellus vitae pharetra ligula.</p>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida
+                    phasellus vitae pharetra ligula.</p>
             </div>
             <div class="services-content">
                 <div class="services-tabs">
@@ -155,7 +183,7 @@
                                 <p>Mauris porttitor ante ut cursus proin purus, semper et risus at dignissi.</p>
                             </div>
                             <div class="service-image">
-                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-1.jpg" alt="Branding service">
+                                <img src="https://placehold.co/1000x790" alt="Branding service">
                             </div>
                         </div>
                     </div>
@@ -166,7 +194,7 @@
                                 <p>Sed ut lacus a sem varius dictum sed eget augue. Nullam vitae tristique libero.</p>
                             </div>
                             <div class="service-image">
-                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-2.jpg" alt="UI/UX Design service">
+                                <img src="https://placehold.co/1000x790" alt="UI/UX Design service">
                             </div>
                         </div>
                     </div>
@@ -174,10 +202,11 @@
                         <div class="service-content">
                             <div class="service-text">
                                 <h3>Web Development</h3>
-                                <p>Pellentesque enim nisi, porta quis orci eu, vulputate lorem ipsum eleifend tortor.</p>
+                                <p>Pellentesque enim nisi, porta quis orci eu, vulputate lorem ipsum eleifend tortor.
+                                </p>
                             </div>
                             <div class="service-image">
-                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-3.jpg" alt="Web Development service">
+                                <img src="https://placehold.co/1000x790" alt="Web Development service">
                             </div>
                         </div>
                     </div>
@@ -188,7 +217,7 @@
                                 <p>Orsi varius natoque penatibus et magnis dis parturient montes, ridiculus mus.</p>
                             </div>
                             <div class="service-image">
-                                <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/tabs-service-4.jpg" alt="Marketing service">
+                                <img src="https://placehold.co/1000x790" alt="Marketing service">
                             </div>
                         </div>
                     </div>
@@ -197,10 +226,11 @@
             <div class="services-cta">
                 <div class="cta-content">
                     <div class="cta-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/section-image-6.jpg" alt="Services CTA">
+                        <img src="https://placehold.co/336x406" alt="Services CTA">
                     </div>
                     <div class="cta-text">
-                        <p>Looking for exclusive creative services? Contact us and get free online consultation for your brand or your client's brand.</p>
+                        <p>Looking for exclusive creative services? Contact us and get free online consultation for your
+                            brand or your client's brand.</p>
                         <button class="btn-primary">See all Services</button>
                     </div>
                 </div>
@@ -216,7 +246,9 @@
                 <div class="portfolio-title-wrapper">
                     <h2 class="section-title animated-title">Made with love</h2>
                 </div>
-                <p class="section-description">In auctor ex id urna faucibus porttitor. In feugiat maximus nibh, id sodales mauris interdum at. Etiam eget lorem odio. Duis scelerisque metus ac velit mattis, nec ultrices turpis posuere.</p>
+                <p class="section-description">In auctor ex id urna faucibus porttitor. In feugiat maximus nibh, id
+                    sodales mauris interdum at. Etiam eget lorem odio. Duis scelerisque metus ac velit mattis, nec
+                    ultrices turpis posuere.</p>
             </div>
             <div class="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">All Works</button>
@@ -227,7 +259,7 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2023/12/project-1.jpeg" alt="Medium Scene">
+                        <img src="https://placehold.co/698x508" alt="Medium Scene">
                         <div class="portfolio-overlay">
                             <h3>Medium Scene</h3>
                             <p>Lightbox</p>
@@ -236,7 +268,7 @@
                 </div>
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-2.jpg" alt="Rise of Design">
+                        <img src="https://placehold.co/698x508" alt="Rise of Design">
                         <div class="portfolio-overlay">
                             <h3>Rise of Design</h3>
                             <p>External Page</p>
@@ -245,7 +277,7 @@
                 </div>
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-3.jpg" alt="Visual Stranger">
+                        <img src="https://placehold.co/698x508" alt="Visual Stranger">
                         <div class="portfolio-overlay">
                             <h3>Visual Stranger</h3>
                             <p>External Page</p>
@@ -254,7 +286,7 @@
                 </div>
                 <div class="portfolio-item" data-category="development">
                     <div class="portfolio-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-4.jpg" alt="Amplitude">
+                        <img src="https://placehold.co/698x508" alt="Amplitude">
                         <div class="portfolio-overlay">
                             <h3>Amplitude</h3>
                             <p>External Page</p>
@@ -263,7 +295,7 @@
                 </div>
                 <div class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-5.jpg" alt="Super Awards">
+                        <img src="https://placehold.co/698x508" alt="Super Awards">
                         <div class="portfolio-overlay">
                             <h3>Super Awards</h3>
                             <p>External Page</p>
@@ -272,7 +304,7 @@
                 </div>
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-image">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/project-6.jpg" alt="Design System">
+                        <img src="https://placehold.co/698x508" alt="Design System">
                         <div class="portfolio-overlay">
                             <h3>Design System</h3>
                             <p>Lightbox</p>
@@ -292,23 +324,28 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Three Simple Steps to Succeed at Design</h2>
-                <p class="section-description">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor integer lectus. Praesent sed nisi eleifend, fermentum orci lorem amet, iaculis libero lorem. Sed lacinia quam eu velit eleifend lorem ipsum elementum laoreet.</p>
+                <p class="section-description">Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper
+                    pulvinar neque porttitor integer lectus. Praesent sed nisi eleifend, fermentum orci lorem amet,
+                    iaculis libero lorem. Sed lacinia quam eu velit eleifend lorem ipsum elementum laoreet.</p>
             </div>
             <div class="process-steps">
                 <div class="step-item">
                     <div class="step-number">Step 1</div>
                     <h3>Research</h3>
-                    <p>Integer commodo mi ut velit bibendum eleifend. Duis nulla lectus, pharetra eu rhoncus id, pharetra ut turpis.</p>
+                    <p>Integer commodo mi ut velit bibendum eleifend. Duis nulla lectus, pharetra eu rhoncus id,
+                        pharetra ut turpis.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">Step 2</div>
                     <h3>Implementation</h3>
-                    <p>Donec maximus, dolor a condimentum congue, tellus nisi dictum magna, ut viverra massa ex sit amet nulla.</p>
+                    <p>Donec maximus, dolor a condimentum congue, tellus nisi dictum magna, ut viverra massa ex sit amet
+                        nulla.</p>
                 </div>
                 <div class="step-item">
                     <div class="step-number">Step 3</div>
                     <h3>Production</h3>
-                    <p>Curabitur efficitur, nibh sed vestibulum facilisis, libero lacus accumsan erat, quis ultrices risus urna a lectus.</p>
+                    <p>Curabitur efficitur, nibh sed vestibulum facilisis, libero lacus accumsan erat, quis ultrices
+                        risus urna a lectus.</p>
                 </div>
             </div>
             <div class="video-section">
@@ -330,7 +367,9 @@
                 <div class="newsletter-text">
                     <span class="section-label">Latest News</span>
                     <h2>Check the latest news about our company in our blog.</h2>
-                    <p>Praesent venenatis justo in ultrices tempor. Donec maximus, dolor a condimentum congue, tellus nisi dictum magna, ut viverra massa ex sit amet nulla. Duis lobortis nisl sed aliquam sollicitudin.</p>
+                    <p>Praesent venenatis justo in ultrices tempor. Donec maximus, dolor a condimentum congue, tellus
+                        nisi dictum magna, ut viverra massa ex sit amet nulla. Duis lobortis nisl sed aliquam
+                        sollicitudin.</p>
                 </div>
                 <div class="newsletter-form">
                     <h3>Stay informed with our weekly newsletter.</h3>
@@ -355,9 +394,10 @@
             </div>
             <div class="testimonials-slider">
                 <div class="testimonial-item active">
-                    <p class="testimonial-text">"A remarkable model, everything has been thought out with talent, the design, the responsiveness, the various adaptations."</p>
+                    <p class="testimonial-text">"A remarkable model, everything has been thought out with talent, the
+                        design, the responsiveness, the various adaptations."</p>
                     <div class="testimonial-author">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2024/01/user-3.jpg" alt="Peter Braun">
+                        <img src="https://placehold.co/88x88" alt="Peter Braun">
                         <div class="author-info">
                             <h4>Peter Braun</h4>
                             <p>Business Owner</p>
@@ -365,9 +405,10 @@
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <p class="testimonial-text">"Love it. Found it easy to get my site up and running. Amazing product!"</p>
+                    <p class="testimonial-text">"Love it. Found it easy to get my site up and running. Amazing product!"
+                    </p>
                     <div class="testimonial-author">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2023/02/team-3.jpg" alt="Leeseit">
+                        <img src="https://placehold.co/88x88" alt="Leeseit">
                         <div class="author-info">
                             <h4>Leeseit</h4>
                             <p>Boldway Lda</p>
@@ -375,9 +416,10 @@
                     </div>
                 </div>
                 <div class="testimonial-item">
-                    <p class="testimonial-text">"Beautiful, flexible theme. Much more robust than what I needed for this project, but so chic I couldn't resist."</p>
+                    <p class="testimonial-text">"Beautiful, flexible theme. Much more robust than what I needed for this
+                        project, but so chic I couldn't resist."</p>
                     <div class="testimonial-author">
-                        <img src="https://preview.treethemes.com/resonance/gradient/wp-content/uploads/sites/27/2023/02/team-1.jpg" alt="Sergio Whun">
+                        <img src="https://placehold.co/88x88" alt="Sergio Whun">
                         <div class="author-info">
                             <h4>Sergio Whun</h4>
                             <p>Company / CEO</p>
@@ -416,7 +458,9 @@
             <div class="section-header">
                 <span class="section-label">Contact Us</span>
                 <h2 class="section-title">Say hello, and we'll start productive cooperation.</h2>
-                <p class="section-description">Quisque semper nisl et mi tincidunt, at vulputate nunc tincidunt. Mauris a sapien nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p class="section-description">Quisque semper nisl et mi tincidunt, at vulputate nunc tincidunt. Mauris
+                    a sapien nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -444,7 +488,8 @@
                         <textarea placeholder="Message" rows="5"></textarea>
                         <button type="submit" class="btn-primary">Send Message</button>
                     </form>
-                    <p class="form-note">All the fields are required. By sending the form you agree to the Terms & Conditions and Privacy Policy</p>
+                    <p class="form-note">All the fields are required. By sending the form you agree to the Terms &
+                        Conditions and Privacy Policy</p>
                 </div>
             </div>
         </div>
@@ -483,7 +528,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <a href="https://themeforest.net/user/treethemes/portfolio" target="_blank">Treethemes</a> 2024. Based in London, United Kingdom.</p>
+                <p>&copy; <a href="https://themeforest.net/user/treethemes/portfolio" target="_blank">Treethemes</a>
+                    2024. Based in London, United Kingdom.</p>
             </div>
         </div>
     </footer>
@@ -491,4 +537,5 @@
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>

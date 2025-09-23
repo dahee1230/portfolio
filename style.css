@@ -1,80 +1,27 @@
-:root {
-  /* Colors */
-  --violet-500: hsl(261.1, 83.1%, 57.8%);
-  --pink-500: hsl(328.4, 85.5%, 70.2%);
-  --blue-50: hsl(214.3, 31.8%, 91.4%);
-  --slate-50: hsl(210, 20%, 98%);
-  --pink-50: hsl(327.3, 73.3%, 97.1%);
-  --violet-50: hsl(250, 100%, 97.6%);
-  --pink-30: hsl(329, 100%, 85%);
-  --gray-900: hsl(210, 25%, 7.8431%);
-  --gray-600: hsl(210, 7.1%, 42.7%);
-  --gray-500: hsl(210, 3.6%, 46.1%);
-  --gray-100: hsl(210, 20%, 95.9%);
-  --white: hsl(0, 0%, 100%);
 
-  /* Gradients */
-  --gradient-primary: linear-gradient(350deg, var(--pink-30), var(--white));
-  --gradient-background: linear-gradient(135deg, var(--slate-50) 0%, var(--pink-50) 50%, var(--violet-50) 100%);
-}
-
-
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-  scroll-behavior: smooth;
-}
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { height: 100%; width: 100%; scroll-behavior: smooth; }
 body {
   font-family: 'SUIT', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: #333;
   font-size: 16px;
-  background: #ffffff;
+  background: #fff;
   overflow-x: hidden;
 }
 
 /* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'SUIT', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-}
-
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-}
-
-h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 600;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1;
-  color: #6b7280;
-  margin-bottom: 1rem;
-}
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; }
+p { font-size: 1.1rem; color: #6b7280; margin-bottom: 1rem; }
 
 /* Container */
 .container {
@@ -83,19 +30,74 @@ p {
   padding: 0 2rem;
 }
 
-/* Cache Control */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+
+#about {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+  position: relative;
 }
 
-/* Buttons */
+
+.about1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 180px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* 왼쪽 프로필 박스 */
+
+.profile_box { text-align: left; }
+.profile_box .about_title h2 { font-size: 26px; line-height: 1.5; margin-bottom: 20px; }
+.profile_img {
+  position: relative;
+  left: -50px; /* 필요에 따라 값 조정 */
+}
+.profile_img img { width: 350px; margin-bottom: 20px; }
+.info_box { position: absolute; }
+.info_box p {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+  color: #333;
+  position: absolute;
+  top: -195px;
+  left: 240px;
+}
+
+
+.resume_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+}
+.resume_box h3 { font-size: 18px; font-style: italic; margin-bottom: 12px; }
+.resume_box ul li { font-size: 14px; list-style: none; margin-bottom: 10px; }
+
+
+.personality ul { display: flex; flex-wrap: wrap; gap: 8px; }
+.personality ul li {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  list-style: none;
+}
+
+
+.programs ul { display: flex; flex-wrap: wrap; gap: 12px; }
+.programs ul li img { width: 40px; height: 40px; }
+
+
 .btn-primary {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(221, 160, 221, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(221,160,221,0.4) 100%);
   color: white;
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
   border-radius: 50px;
   font-family: 'SUIT', sans-serif;
   font-weight: 600;
@@ -104,13 +106,12 @@ img {
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  margin: 10px;
 }
-
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 25px rgba(102,126,234,0.3);
 }
-
 .btn-outline {
   background: transparent;
   border: 2px solid #ffc6e4;
@@ -122,22 +123,14 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-.btn-outline:hover {
-  background: #ffc6e4;
-  color: white;
-}
-
+.btn-outline:hover { background: #ffc6e4; color: white; }
 .btn-link {
   color: #667eea;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
 }
-
-.btn-link:hover {
-  color: #764ba2;
-}
+.btn-link:hover { color: #764ba2; }
 
 /* Header */
 .header {
@@ -248,6 +241,7 @@ img {
       rgba(221, 160, 221, 0.4) 100%);
 }
 
+
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -263,10 +257,12 @@ img {
   bottom: 0;
   z-index: 1;
 }
-.hero-buttons{
+
+.hero-buttons {
   display: flex;
   gap: 1rem;
 }
+
 .gradient-shape {
   position: absolute;
   top: 0;
@@ -294,6 +290,7 @@ img {
   bottom: 30%;
   right: 15%;
 }
+
 
 .hero-content {
   display: grid;
@@ -326,26 +323,32 @@ img {
   color: #f472b6;
 }
 
+
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.circle-image {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+.image {
+  width: 600px;
+  height: 800px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -40px;
 }
 
-.circle-image img {
+.image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
+
+
+/* .circle-image img 중복 제거, .image img에서 처리 */
 
 .scroll-indicator {
   position: absolute;
@@ -380,14 +383,15 @@ img {
 
 /* Section Labels */
 .section-label {
-  display: inline-block;
+  display: block;
   color: #f472b6;
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
   font-size: 4.5rem;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
+  text-align: center;
 }
 
 .section-header {
@@ -1237,4 +1241,33 @@ img {
   .contact-form {
     padding: 2rem;
   }
+}
+
+
+.charts { width: 80%; margin: 3rem auto; display: flex; justify-content: center; }
+.charts .chart { margin: 0 20px; position: relative; }
+.charts .chart h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+svg { width: 220px; height: 220px; }
+circle {
+  fill: #fcfcfc;
+  stroke-width: 10;
+  stroke: pink;
+  stroke-dashoffset: 628;
+  stroke-dasharray: 628;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-linecap: round;
+}
+section { height: 100vh; }
+.charts .chart h2 {
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

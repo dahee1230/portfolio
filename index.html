@@ -21,6 +21,7 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="shortcut icon" href="./favicon/favicon.ico">
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>옥다희의 포토폴리오</title>
     <!-- GSAP Libraries -->
@@ -34,7 +35,6 @@
 <body>
     <!-- Header -->
     <header class="header">
-
         <nav class="nav">
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link">Home</a></li>
@@ -53,10 +53,15 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Fresh Peach,Fresh ldeas<br>
-                        신입 디자이너 옥다희입니다</h1>
-                    <button class="btn-primary">이력서 ></button>
-                    <button class="btn-primary">깃허브 ></button>
+                    <div class="gradient-text-box">
+                        <div class="title-text">
+                            <span class="title-light">Fresh Peach,Fresh Ideas</span><br>
+                            <span class="title-bold">신입 디자이너</span><br>
+                            <span class="title-medium">옥다희입니다</span>
+                        </div>
+                        <button class="btn-primary">이력서 ></button>
+                        <button class="btn-primary">깃허브 ></button>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <div class="image">
@@ -83,7 +88,7 @@
                             <li>옥 다 희</li>
                             <li>1992.12.30</li>
                             <li>010.9052.3141</li>
-                            <li>o921230@naver.com</li>
+                            <li><i class="fa-solid fa-envelope"></i> o921230@naver.com</li>
                         </ul>
                     </div>
                 </div>
@@ -115,7 +120,7 @@
         <div class="container">
             <section>
                 <div class="section-header">
-                     <div class="text">SKILLS</div>
+                    <div class="text">SKILLS</div>
                     <div class="charts">
                         <div class="chart">
                             <h3 data-num="10">Photoshop</h3>
@@ -226,7 +231,7 @@
                 }
                 ScrollTrigger.create({
                     trigger: '.charts',
-                    start: 'top 80%', 
+                    start: 'top 80%',
                     once: true,
                     onEnter: function () {
                         ani()
@@ -262,7 +267,8 @@
                             <li>페이지수 / 특징 : HTML , CSS</li>
                         </ul>
                         <div class="button-group">
-                            <button>깃허브 보기</button>
+                            <a href="https://github.com/dahee1230/project.git" target="_blank"><button>깃허브
+                                    보기</button></a>
                             <button>구현화면 보기</button>
                             <button>기획서 보기</button>
                         </div>
@@ -393,7 +399,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
-                        <h3>Email</h3>
+                        <h3><i class="fa-solid fa-envelope"></i> Email</h3>
                         <p>o921230@naver.com</p>
                     </div>
                     <div class="info-item">
@@ -425,15 +431,6 @@
                         <li><a href="#">Instagram</a></li>
                         <li><a href="#">LinkedIn</a></li>
                         <li><a href="#">Dribbble</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal & Press</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Press Kit</a></li>
-                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
             </div>

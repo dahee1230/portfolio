@@ -88,12 +88,14 @@ p {
   background: transparent;
   border: 2px solid #ffc6e4;
   color: var(--gradient-primary);
-  padding: 0.8rem 1.5rem;
+  padding: 0.4rem 1rem;
   border-radius: 50px;
   font-family: 'SUIT', sans-serif;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-outline:hover {
@@ -250,7 +252,7 @@ main {
 }
 
 .photo img {
-  width: 355px;
+  width: 400px;
   height: auto;
 }
 
@@ -301,6 +303,18 @@ main {
   letter-spacing: 1px;
   margin: 0 auto 2rem;
   text-align: center;
+}
+
+.text {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #FFC0CB 0%, #FFDFE5 35%, #FFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .charts {
@@ -355,8 +369,8 @@ circle {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 10rem;
   margin-bottom: 4rem;
 }
 
@@ -369,7 +383,6 @@ circle {
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 40px #d7a9b12e;
-
   border-radius: 20px;
 }
 
@@ -393,7 +406,7 @@ circle {
 
 .portfolio-text ul {
   list-style: none;
-  padding: 0;
+  padding-left: 15px;
   margin: 0;
 }
 
@@ -403,6 +416,29 @@ circle {
   margin-bottom: 0.8rem;
   color: #333;
   font-weight: 500;
+}
+
+.portfolio-text .button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.portfolio-text button {
+  flex: 1;
+  border-radius: 20px;
+  border: none;
+  padding: 0.8rem 1rem;
+  background: #ffc0cb61;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-text button:hover {
+  background: #ffc6e4;
+  transform: translateY(-2px);
 }
 
 .portfolio-image img {
@@ -428,6 +464,20 @@ circle {
   transform: translateY(0);
 }
 
+.left {
+  text-align: left;
+}
+
+.right {
+  margin-top: 150px;
+  text-align: right;
+}
+
+.right ul {
+  text-align: right;
+  padding-right: 15px;
+}
+
 .portfolio-overlay h3 {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
@@ -436,6 +486,10 @@ circle {
 .portfolio-overlay p {
   color: #939393;
   margin: 0;
+}
+
+.info-item {
+  text-align: center;
 }
 
 /* Contact Section */
@@ -454,13 +508,6 @@ circle {
   font-size: 1.1rem;
 }
 
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-top: 4rem;
-}
-
 .info-item h3 {
   color: #333;
   margin-bottom: 0.5rem;
@@ -468,61 +515,6 @@ circle {
 
 .info-item p {
   margin-bottom: 0.5rem;
-}
-
-.info-item a {
-  color: #667eea;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.info-item a:hover {
-  color: #764ba2;
-}
-
-.contact-form {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  padding: 3rem;
-  border-radius: 20px;
-}
-
-.contact-form p:first-child {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 2rem;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 1rem;
-  border: 2px solid #e5e7eb;
-  border-radius: 10px;
-  font-family: 'SUIT', sans-serif;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #667eea;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-note {
-  font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.7);
-  margin: 0;
 }
 
 /* Footer */

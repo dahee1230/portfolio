@@ -42,7 +42,24 @@
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#contact" class="btn-outline">Contact</a>
+                <a href="#contact" class="button" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                            width="10">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                            class="button__icon-svg button__icon-svg--copy">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    Contact
+                </a>
             </div>
         </nav>
     </header>
@@ -81,42 +98,45 @@
     </section>
     <!-- About Section -->
     <div id="about" class="container">
-        <main>
-            <section class="left">
-                <div class="about-header">
-                    <p class="about-label">ABOUT ME</p>
-                    <h2 class="about-title">안녕하세요!<br>
-                        밝은 에너지와 도전으로 성장하는<br>
-                        <span class="bold">옥다희</span>입니다.</h2>
-                </div>
-                <div class="profile-container">
-                    <div class="photo">
-                        <img src="./img/profile.png" alt="Da Hee" />
-                    </div>
-                    <div class="intro">
-                        <ul class="contact-info">
-                            <li>옥 다 희</li>
-                            <li>1992.12.30</li>
-                            <li>010.9052.3141</li>
-                            <li>o921230@naver.com</li>
-                        </ul>
-                    </div>
+        <main class="about-main">
+            <section class="about-left">
+                <div class="about-image-container">
+                    <img src="./img/profileimg.png" alt="Da Hee" class="about-profile-image" />
                 </div>
             </section>
-            <section class="right">
-                <div class="info-block">
-                    <h3 class="section-title">Licenses</h3>
-                    <p><span class="bold">2019.02</span> 자동차 운전면허증 2종 보통</p>
-                    <p><span class="bold">2016.12</span> 미용사(메이크업,네일아트)</p>
-                </div>
-                <div class="info-block">
-                    <h3 class="section-title">Education</h3>
-                    <p><span class="bold">2025.10</span> AI를 활용한 반응형 웹콘텐츠(영상제작&코딩) 개발기획자 양성과정 수료</p>
-                    <p><span class="bold">2011.03</span> 대진디자인고등학교 컴퓨터학과 졸업</p>
-                </div>
-                <div class="info-block">
-                    <h3 class="section-title">Programs</h3>
-                </div>
+
+            <section class="about-right">
+                <div class="about-content">
+                    <p class="about-intro-label">ABOUT ME</p>
+                    <h2 class="about-main-title">안녕하세요!<br>
+                        밝은 에너지와 도전으로 성장하는<br>
+                        <span class="bold">옥다희</span>입니다.
+                    </h2>
+
+                    <div class="about-description">
+                        <div class="contact-section">
+                            <h3>Introduce</h3>
+                            <ul class="contact-info">
+                                <li>옥 다 희</li>
+                                <li>1992.12.30</li>
+                                <li>010.9052.3141</li>
+                                <li>o921230@naver.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-section">
+                            <h3>Licenses</h3>
+                            <p><span class="bold">2019.02</span> 자동차 운전면허증 2종 보통</p>
+                            <p><span class="bold">2016.12</span> 미용사(메이크업,네일아트)</p>
+                        </div>
+
+                        <div class="info-section">
+                            <h3>Education</h3>
+                            <p><span class="bold">2025.10</span> AI를 활용한 반응형 웹콘텐츠(영상제작&코딩) 개발기획자 양성과정 수료</p>
+                            <p><span class="bold">2011.03</span> 대진디자인고등학교 컴퓨터학과 졸업</p>
+                        </div>
+                    </div>
+
             </section>
         </main>
     </div>
@@ -125,7 +145,7 @@
         <div class="container">
             <section>
                 <div class="section-header">
-                    <div class="text">SKILLS</div>
+                    <p class="about-intro-label">SKILLS</p>
                     <div class="charts">
                         <div class="chart">
                             <h3 data-num="10">Photoshop</h3>
@@ -247,7 +267,7 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
-                <div class="text">PORTFOLIO</div>
+                <p class="about-intro-label">PORTFOLIO</p>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
@@ -259,41 +279,43 @@
                         </div>
                     </div>
                     <div class="portfolio-text w50">
-                        <span class="no">Project 01</span>
+                        <span class="no">01</span>
+                        <p>팝콘플레이</p>
                         <ul>
-                            <li>기술스택 : React, ReactRouter, Python, Tailwind, Git, Render, Vercel</li>
-                            <li>배포매체 : desktop</li>
+                            <li>기술스택 : React(Vite), Tailwind, Axios, Swiper</li>
+                            <li>배포매체 : Vercel</li>
                             <li>작업기간 : 3주</li>
                             <li>본인기여도 : 25%</li>
-                            <li>브라우저 호환성 : HTML , CSS</li>
-                            <li>페이지수 / 특징 : HTML , CSS</li>
+                            <li>브라우저 호환성 : Chrome/Firefox/Edge/Safari 지원</li>
+                            <li>페이지 수 : 페이지 약 5개(홈/검색/상세/마이/로그인)</li>
                         </ul>
                         <div class="button-group">
-                            <a href="https://github.com/dahee1230/popcornplay-frontend.git" target="_blank"><button>깃허브
-                                    보기</button></a>
-                            <a href="https://popcornplay-frontend.vercel.app/" target="_blank"><button>구현화면
-                                    보기</button></a>
+                            <a href="https://github.com/dahee1230/popcornplay-frontend.git" target="_blank"><button><span>깃허브
+                                    보기</span></button></a>
+                            <a href="https://popcornplay-frontend.vercel.app/" target="_blank"><button><span>구현화면
+                                    보기</span></button></a>
                             <a href="https://drive.google.com/file/d/1NyWapAlQsZKxWD-cJ5YkHOh58clrHR07/view?usp=drive_link"
-                                target="_blank"><button>기획서 보기</button></a>
+                                target="_blank"><button><span>기획서 보기</span></button></a>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio - 01 -->
                 <div class="portfolio-item right">
                     <div class="portfolio-text w50">
-                        <span class="no">Project 02</span>
+                        <span class="no">02</span>
+                        <p>온그릇</p>
+                        <p class="app-instruction">※직접 어플을 조작해 보세요!</p>
                         <ul>
                             <li>기술스택 : Figma</li>
                             <li>배포매체 : Mobile App</li>
                             <li>작업기간 : 2주</li>
-                            <li>본인기여도 : 100%</li>
+                            <li>본인기여도 : 25%</li>
                             <li>브라우저 호환성 : 모바일 최적화</li>
-                            <li>페이지수 / 특징 : UI/UX 디자인</li>
                         </ul>
                         <div class="button-group">
-                            <button>구현화면 보기</button>
+                            <a href="https://www.figma.com/proto/SovPsS0PpvBjIGRXy2tSW4/UX-UI%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?page-id=0%3A1&node-id=4-1924&viewport=25%2C136%2C0.27&t=f2vBVakH4hn8L5L1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=4%3A1901" target="_blank"><button><span>구현화면 보기</span></button></a>
                             <a href="https://drive.google.com/file/d/1rQdC1RX1mo8IAwRxFbfd5MtvzuTl_tfM/view?usp=drive_link"
-                                target="_blank"><button>기획서 보기</button></a>
+                                target="_blank"><button><span>기획서 보기</span></button></a>
                         </div>
                     </div>
                     <div class="mock w50">
@@ -313,42 +335,42 @@
                         </div>
                     </div>
                     <div class="portfolio-text w50">
-                        <span class="no">Project 03</span>
+                        <span class="no">03</span>
+                        <p>인터파크 티켓</p>
                         <ul>
-                            <li>기술스택 : HTML , CSS</li>
-                            <li>배포매체 : desktop</li>
+                            <li>기술스택 : HTML, CSS, JavaScript, Swiper.js</li>
+                            <li>배포매체 : GitHub Pages</li>
                             <li>작업기간 : 3주</li>
                             <li>본인기여도 : 100%</li>
-                            <li>브라우저 호환성 : HTML , CSS</li>
-                            <li>페이지수 / 특징 : HTML , CSS</li>
+                            <li>브라우저 호환성 : Chrome/Firefox/Edge</li>
                         </ul>
                         <div class="button-group">
-                            <a href="https://github.com/dahee1230/project.git" target="_blank"><button>깃허브
-                                    보기</button></a>
-                            <a href="https://dahee1230.github.io/project/" target="_blank"><button>구현화면 보기</button></a>
+                            <a href="https://github.com/dahee1230/project.git" target="_blank"><button><span>깃허브
+                                    보기</span></button></a>
+                            <a href="https://dahee1230.github.io/project/" target="_blank"><button><span>구현화면 보기</span></button></a>
                         </div>
                     </div>
                 </div>
                 <!-- portfolio - 03 -->
                 <div class="portfolio-item right">
                     <div class="portfolio-text w50">
-                        <span class="no">Project 04</span>
+                        <span class="no">04</span>
+                        <p>Liv&Grow</p>
                         <ul>
-                            <li>기술스택 : HTML , CSS</li>
+                            <li>기술스택 : Premiere , AfterEffects</li>
                             <li>배포매체 : desktop</li>
-                            <li>작업기간 : 3주</li>
-                            <li>본인기여도 : 100%</li>
+                            <li>작업기간 : 2주</li>
+                            <li>본인기여도 : 25%</li>
                             <li>브라우저 호환성 : HTML , CSS</li>
-                            <li>페이지수 / 특징 : HTML , CSS</li>
                         </ul>
                         <div class="button-group">
-                            <button>구현화면 보기</button>
+                            <a href="https://drive.google.com/file/d/1TIgcX1ZlwwuYf8VkoDDszeStNim7xkro/view?usp=sharing" target="_blank"><button><span>구현화면 보기</span></button></a>
                             <a href="https://drive.google.com/file/d/160OArrerOfb7kQyPrv1EVOy0mTjKollO/view?usp=drive_link"
-                                target="_blank"><button>기획서 보기</button></a>
+                                target="_blank"><button><span>기획서 보기</span></button></a>
                         </div>
                     </div>
                     <div class="portfolio-image w50">
-                        <img src="./img/interpark1.png" alt="Medium Scene">
+                        <img src="./img/LIV.png" alt="Medium Scene">
                         <div class="portfolio-overlay">
                             <h3>Project 04</h3>
                             <p>Liv&Grow</p>
@@ -358,24 +380,24 @@
                 <!-- portfolio - 04 -->
                 <div class="portfolio-item">
                     <div class="portfolio-image w50">
-                        <img src="./img/interpark1.png" alt="Medium Scene">
+                        <img src="./img/dog.png" alt="Medium Scene">
                         <div class="portfolio-overlay">
                             <h3>Project 05</h3>
                             <p>강아지사료 상세페이지</p>
                         </div>
                     </div>
                     <div class="portfolio-text w50">
-                        <span class="no">Project 05</span>
+                        <span class="no">05</span>
+                        <p>강아지사료 상세페이지</p>
                         <ul>
-                            <li>기술스택 : HTML , CSS</li>
+                            <li>기술스택 : Photoshop</li>
                             <li>배포매체 : desktop</li>
-                            <li>작업기간 : 3주</li>
+                            <li>작업기간 : 3일</li>
                             <li>본인기여도 : 100%</li>
-                            <li>브라우저 호환성 : HTML , CSS</li>
-                            <li>페이지수 / 특징 : HTML , CSS</li>
+                            <li>브라우저 호환성 : </li>
                         </ul>
                         <div class="button-group">
-                            <button>구현화면 보기</button>
+                            <a href="https://drive.google.com/file/d/17WZxJ1Hd8udInq5QdQKNi6-NXBunlQyV/view?usp=drive_link" target="_blank"><button><span>구현화면 보기</span></button></a>
                         </div>
                     </div>
                 </div>
@@ -386,13 +408,26 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <div class="text">CONTACT US</div>
+            <div class="contact-header">
+                <p class="about-intro-label">CONTACT ME!</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <span>지금까지 포토폴리오를 봐주셔서 감사합니다 <br>
-                        경험과 성실함으로 계속발전하며,좋은 영항을 전하는 디자이너로 성장하겠습니다.</span>
+
+            <div class="contact-main-content">
+                <p class="contact-main-text">
+                    지금까지 <span class="highlight">감각</span>을 디자인하는 <span class="highlight">'옥다희'</span>의 포트폴리오를 봐주셔서
+                    감사합니다!<br>
+                    경험과 성실함으로 계속발전하며, 좋은 영항을 전하는 디자이너로 성장하겠습니다.
+                </p>
+            </div>
+
+            <div class="contact-info-bottom">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>010-9052-3141</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>o921230@naver.com</span>
                 </div>
             </div>
         </div>
@@ -401,14 +436,6 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="info-item">
-                    <h3><i class="fa-solid fa-envelope"></i> Email</h3>
-                    <p>o921230@naver.com</p>
-                </div>
-                <div class="info-item">
-                    <h3>Phone</h3>
-                    <p>010-9052-3141</p>
-                </div>
             </div>
         </div>
     </footer>

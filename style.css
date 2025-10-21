@@ -33,21 +33,11 @@ h6 {
   margin-bottom: 1rem;
 }
 
-/* h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-}
-
-/* h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 600;
-}
-
 p {
   font-size: 1rem;
   color: #6b7280;
   margin-bottom: 1rem;
-} */ */
+}
 
 /* Container */
 .container {
@@ -55,8 +45,6 @@ p {
   margin: 0 auto;
   padding: 0 2rem;
 }
-
-/* Buttons */
 
 /* Buttons */
 .btn-primary {
@@ -98,6 +86,69 @@ p {
 .btn-outline:hover {
   background: #a65b50;
   color: white;
+}
+
+/* From Uiverse.io by Creatlydev */ 
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #f38576;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #f38576;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button__icon-svg {
+  width: 10px;
+  height: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #c5003b;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #c5003b;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
 }
 
 /* Header */
@@ -288,6 +339,137 @@ p {
   padding-top: 100px;
 }
 
+
+.about-main {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 0;
+    min-height: 80vh;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image-container {
+    position: relative;
+    max-width: 400px;
+}
+
+.about-profile-image {
+    width: 460px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-right {
+    flex: 1.2;
+    padding-left: 40px;
+}
+
+.about-intro-label {
+    color: #ff8a8a;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-main-title {
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    color: #333 !important;
+    margin-bottom: 30px;
+}
+
+.about-main-title .bold {
+    font-weight: 800;
+    color: #333;
+}
+
+.about-description {
+    margin-bottom: 40px;
+}
+
+.contact-section h3, .info-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ff8a8a;
+    display: inline-block;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.contact-info li {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 15px;
+}
+
+.info-section {
+    margin-bottom: 25px;
+}
+
+.info-section p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+}
+
+.signature-text {
+    font-family: cursive;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.signature-title {
+    font-size: 14px;
+    color: #666;
+}
+
+.about-btn {
+    background: linear-gradient(135deg, #ff8a8a, #ff6b6b);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 138, 138, 0.3);
+}
+
+/* Legacy About Styles - 기존 코드와의 충돌 방지 */
 main {
   display: flex;
   gap: 100px;
@@ -295,85 +477,17 @@ main {
 
 .left {
   flex: 1;
+  text-align: left;
 }
 
 .right {
   flex: 1.2;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: right;
 }
 
-.profile-title .outline {
-  font-size: 3.5rem;
-  font-weight: 300;
-  color: #ccc;
-  letter-spacing: 4px;
-  line-height: 1;
-}
-
-#left .profile-title h2 {
-  font-size: 45px;
-  line-height: 1.5;
-}
-
-/* About Header Styles */
-.about-header {
-  position: relative;
-  margin-bottom: 3rem;
-}
-
-.about-label {
-  font-size: 1.2rem;
-  font-weight: 900;
-  color: #f38576;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-.about-title {
-  font-size: 35px !important;
-  line-height: 1.5 !important;
-  color: #333;
-  font-weight: 400;
-}
-
-.about-title .bold {
-  font-weight: 800;
-  color: #333;
-}
-
-.profile-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.photo {
-  flex-shrink: 0;
-}
-
-.photo img {
-  width: 400px;
-  height: auto;
-}
-
-.intro {
-  flex: 1;
-}
-
-.contact-info {
-  list-style: none;
-  padding: 0;
-  font-size: 0.95rem;
-  display: flex;
-  flex-direction: column;
-  margin-top: 160px;
-  margin-left: -70px;
-}
-
-.contact-info li {
-  margin-bottom: 5px;
-}
-
+/* Section Styles */
 .section-title {
   padding: 6px 0px;
   display: inline-block;
@@ -505,13 +619,52 @@ circle {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
 }
 
 .portfolio-text .no {
-  font-size: 4.2rem;
-  font-weight: 800;
-  color: #f38576;
-  margin-bottom: 1rem;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #ffefef;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-family: 'Arial', sans-serif;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: -1rem;
+  z-index: 1;
+}
+
+.portfolio-item.right .portfolio-text .no {
+  right: 3.5rem;
+  left: auto;
+}
+
+.portfolio-text > p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 2;
+  bottom: -20px;
+  left: 15px;
+}
+
+.portfolio-item.right .portfolio-text > p {
+  left: -30px;
+}
+
+.app-instruction {
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+  margin: -1rem 0 1rem 0 !important;
+  bottom: auto !important;
+  left: -30px !important;
 }
 
 .portfolio-text ul {
@@ -535,33 +688,70 @@ circle {
   margin-top: 1rem;
 }
 
+.portfolio-item.right .portfolio-text .button-group {
+  justify-content: flex-end;
+}
+
 .portfolio-text .button-group a {
   text-decoration: none;
 }
 
+/* From Uiverse.io by BHARGAVPATEL1244 - Portfolio Button Style */
 .portfolio-text button {
-  flex: 1;
-  border-radius: 45px;
-  border: none;
-  padding: 1.2rem 1rem;
-  background: #f8b5ac;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 1rem;
+  outline: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+  color: ghostwhite;
   min-height: 55px;
   min-width: 120px;
   white-space: nowrap;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
 }
 
-.portfolio-text button:hover {
-  background: #f38576;
-  transform: translateY(-2px);
+.portfolio-text button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.portfolio-text button:hover span {
+  color: linear-gradient(135deg, #fca5a5 0%, #f87171 100%);
+}
+
+.portfolio-text button::before,
+.portfolio-text button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.portfolio-text button::before {
+  content: "";
+  background: linear-gradient(135deg, #fca5a5 0%, #f87171 100%);
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.portfolio-text button:hover::before {
+  transform: translate3d(100%, 0, 0);
 }
 
 .portfolio-image img {
@@ -569,6 +759,14 @@ circle {
   min-height: 400px;
   object-fit: cover;
   transition: all 0.5s ease;
+}
+
+.portfolio-item:nth-child(4) .portfolio-image img,
+.portfolio-item:nth-child(5) .portfolio-image img {
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .portfolio-overlay {
@@ -590,20 +788,6 @@ circle {
 .portfolio-image:hover .portfolio-overlay {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.portfolio-image:hover img {
-  transform: scale(1.3) rotate(15deg);
-}
-
-.left {
-  text-align: left;
-}
-
-.right {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  text-align: right;
 }
 
 .right ul {
@@ -685,8 +869,108 @@ circle {
 
 /* Contact Section */
 .contact {
-  padding: 6rem 0;
-  background: #fff;
+  padding: 8rem 0;
+  /* background: #f8f9fa; */
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 4rem;
+}
+
+.contact-title {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: #333 !important;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.contact-main-content {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.contact-main-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.contact-main-text .highlight {
+  color: #fc5d7d;
+  font-weight: 600;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 4rem;
+}
+
+.contact-button-left, .contact-button-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-button-left:hover, .contact-button-right:hover {
+  transform: translateY(-5px);
+}
+
+.button-label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.button-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #ff8a8a, #ff6b6b);
+  border-radius: 2px;
+}
+
+.button-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.button-icon i {
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-info-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-item i {
+  font-size: 18px;
+  color: #fc5d7d;
 }
 
 .section-title {
@@ -922,4 +1206,57 @@ circle {
   .title-medium {
     font-size: 2.5rem;
   }
+}
+
+/* About Section Responsive */
+@media (max-width: 768px) {
+    .about-main {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 0;
+    }
+    
+    .about-right {
+        padding-left: 0;
+    }
+    
+    .about-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .about-main-title {
+        font-size: 28px !important;
+    }
+    
+    .about-image-container {
+        max-width: 300px;
+    }
+}
+
+/* Contact Section Responsive */
+@media (max-width: 768px) {
+    .contact {
+        padding: 4rem 0;
+    }
+    
+    .contact-title {
+        font-size: 32px !important;
+    }
+    
+    .contact-main-text {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .contact-info-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }

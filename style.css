@@ -166,11 +166,40 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+  display: block;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 4px;
 }
 
 .nav-menu {
@@ -178,6 +207,8 @@ p {
   list-style: none;
   gap: 2rem;
   align-items: center;
+  margin-left: auto;
+  margin-right: 2rem;
 }
 
 .nav-link {
@@ -1073,6 +1104,10 @@ circle {
 
   .nav {
     padding: 1rem;
+  }
+
+  .logo-img {
+    height: 35px;
   }
 
   .nav-menu {

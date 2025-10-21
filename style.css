@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'SUIT', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: "SUIT", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
   color: #3e2424;
   font-size: 16px;
@@ -27,23 +27,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'SUIT', sans-serif;
+  font-family: "SUIT", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
-h1 {
+/* h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
 }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-}
-
-h3 {
+/* h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
 }
@@ -52,7 +47,7 @@ p {
   font-size: 1rem;
   color: #6b7280;
   margin-bottom: 1rem;
-}
+} */ */
 
 /* Container */
 .container {
@@ -61,27 +56,30 @@ p {
   padding: 0 2rem;
 }
 
+/* Buttons */
 
 /* Buttons */
 .btn-primary {
-  background: #f8b5ac;
+  background: linear-gradient(135deg, #fca5a5 0%, #f87171 100%);
   color: white;
   border: none;
-  padding: 0.7rem 2rem;
-  border-radius: 50px;
-  font-family: 'SUIT', sans-serif;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-family: "SUIT", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-  margin: 10px;
+  margin-right: 1rem;
+  box-shadow: 0 4px 15px rgba(248, 113, 113, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 30px 36px 0px rgba(242.99999999999997, 132.99999999999997, 117.99999999999997, .12941176470588237);
+  box-shadow: 0 8px 25px rgba(248, 113, 113, 0.4);
+  background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
 }
 
 .btn-outline {
@@ -89,7 +87,7 @@ p {
   color: white;
   padding: 0.4rem 1rem;
   border-radius: 50px;
-  font-family: 'SUIT', sans-serif;
+  font-family: "SUIT", sans-serif;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -133,7 +131,6 @@ p {
 
 .nav-link {
   color: #3e2424;
-  ;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -158,6 +155,21 @@ p {
   overflow: hidden;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  width: 1710px;
+  height: 500px;
+  padding-bottom: calc(0.5 * 100%);
+  border-radius: 0 0 0 175px;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, #FFEFEF00 0%, #ffefef 100%);
+  z-index: 1;
+}
+
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -173,7 +185,6 @@ p {
 
 .hero-title {
   color: #3e2424;
-  ;
   font-family: SUIT;
   font-size: 2.5rem;
   font-style: normal;
@@ -195,6 +206,32 @@ p {
   align-items: center;
 }
 
+.gradient-text-box .inner-text {
+  position: relative;
+  top: -50px;
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+
+.gradient-text-box .inner-text .span1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.gradient-text-box .inner-text .span2 {
+  position: absolute;
+  left: 150px;
+  top: -5px;
+  font-size: 1.3em;
+  font-weight: 100;
+  line-height: 1;
+  color: #fd8878;
+}
+
 .image {
   width: 600px;
   height: 800px;
@@ -210,6 +247,36 @@ p {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.leaf-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.leaf-image .leaf-1 {
+  position: absolute;
+  top: 23%;
+  right: -50%;
+  width: 300px;
+  height: auto;
+  transform: rotate(5deg);
+  opacity: 1;
+}
+
+.leaf-image .leaf-2 {
+  position: absolute;
+  bottom: 20%;
+  left: -8%;
+  width: 100px;
+  height: auto;
+  transform: rotate(-15deg);
+  opacity: 0.7;
 }
 
 /* Profile Section */
@@ -240,6 +307,38 @@ main {
   color: #ccc;
   letter-spacing: 4px;
   line-height: 1;
+}
+
+#left .profile-title h2 {
+  font-size: 45px;
+  line-height: 1.5;
+}
+
+/* About Header Styles */
+.about-header {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.about-label {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #f38576;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about-title {
+  font-size: 35px !important;
+  line-height: 1.5 !important;
+  color: #333;
+  font-weight: 400;
+}
+
+.about-title .bold {
+  font-weight: 800;
+  color: #333;
 }
 
 .profile-container {
@@ -307,13 +406,13 @@ main {
 }
 
 .text {
-  font-size: 5rem;
+  font-size: 16px;
   font-weight: 900;
   text-align: center;
   margin: 2rem 0;
   margin-bottom: 100px;
   letter-spacing: 2px;
-  background: linear-gradient(243deg, #f38576, #fffdfd);
+  background:#f38576;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -356,7 +455,6 @@ circle {
 
 .charts .chart h2 {
   color: #3e2424;
-  ;
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -433,23 +531,32 @@ circle {
 
 .portfolio-text .button-group {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   margin-top: 1rem;
+}
+
+.portfolio-text .button-group a {
+  text-decoration: none;
 }
 
 .portfolio-text button {
   flex: 1;
   border-radius: 45px;
   border: none;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1rem;
   background: #f8b5ac;
   color: #ffffff;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-height: 50px;
+  min-height: 55px;
+  min-width: 120px;
   white-space: nowrap;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-text button:hover {
@@ -545,6 +652,7 @@ circle {
   top: 10px;
   border-radius: 40px;
 }
+
 .mock:after {
   position: absolute;
   content: "";
@@ -558,6 +666,7 @@ circle {
   top: 0;
   left: 0;
 }
+
 .crop iframe {
   z-index: 9999999;
   position: absolute;
@@ -742,7 +851,7 @@ circle {
   bottom: -20px;
   border-radius: 20px;
   padding: 5px;
-  background: linear-gradient(226deg, #f38576, #fffdfd);
+  background: linear-gradient(226deg, #f3857675, #fffdfd);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
@@ -759,6 +868,7 @@ circle {
   max-width: 600px;
   margin-bottom: 40px;
   margin-left: -40px;
+  position: relative;
 }
 
 /* Buttons inside gradient box */
@@ -767,23 +877,27 @@ circle {
   margin-right: 40px;
 }
 
-
 .title-light {
   font-weight: 300;
   font-size: 3.5rem;
 }
 
 .title-bold {
+  position: relative;
+  display: block;
+  height: 4rem;
+  z-index: 2;
+  color: #3e2424;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 3rem;
+  letter-spacing: -2px;
+  margin-top: 3rem;
 }
 
 .title-medium {
   font-weight: 500;
   font-size: 4rem;
 }
-
-
 
 /* Responsive for gradient box */
 @media (max-width: 768px) {

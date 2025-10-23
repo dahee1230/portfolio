@@ -38,12 +38,12 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <a href="#" class="logo-link">
+                <a href="#hero" class="logo-link">
                     <img src="img/logo.png" alt="로고" class="logo-img">
                 </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -71,7 +71,7 @@
         </nav>
     </header>
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
@@ -96,7 +96,6 @@
                         <img src="./img/profileima.png" alt="Two women discussing business">
                         <div class="leaf-image">
                             <img src="./img/leaf.svg" alt="leaf image" class="leaf-1">
-                            <img src="./img/leaf2.svg" alt="leaf image" class="leaf-2">
                         </div>
                     </div>
                 </div>
@@ -294,7 +293,7 @@
                             <li>작업기간 : 3주</li>
                             <li>본인기여도 : 25%</li>
                             <li>브라우저 호환성 : Chrome/Firefox/Edge/Safari 지원</li>
-                            <li>페이지 수 : 페이지 약 5개(홈/검색/상세/마이/로그인)</li>
+                            <li>페이지 수 : 페이지 약 5개(홈/검색/상세/마이페이지/로그인)</li>
                         </ul>
                         <div class="button-group">
                             <a href="https://github.com/dahee1230/popcornplay-frontend.git" target="_blank"><button><span>깃허브
@@ -368,7 +367,6 @@
                             <li>배포매체 : desktop</li>
                             <li>작업기간 : 2주</li>
                             <li>본인기여도 : 25%</li>
-                            <li>브라우저 호환성 : HTML , CSS</li>
                         </ul>
                         <div class="button-group">
                             <a href="https://drive.google.com/file/d/1TIgcX1ZlwwuYf8VkoDDszeStNim7xkro/view?usp=sharing" target="_blank"><button><span>구현화면 보기</span></button></a>
@@ -387,10 +385,12 @@
                 <!-- portfolio - 04 -->
                 <div class="portfolio-item">
                     <div class="portfolio-image w50">
-                        <img src="./img/dog.png" alt="Medium Scene">
-                        <div class="portfolio-overlay">
-                            <h3>Project 05</h3>
-                            <p>강아지사료 상세페이지</p>
+                        <div class="portfolio-click" onclick="openModal('dogFoodModal')">
+                            <img src="./img/dog.png" alt="Medium Scene">
+                            <div class="portfolio-overlay">
+                                <h3>Project 05</h3>
+                                <p>강아지사료 상세페이지</p>
+                            </div>
                         </div>
                     </div>
                     <div class="portfolio-text w50">
@@ -401,7 +401,6 @@
                             <li>배포매체 : desktop</li>
                             <li>작업기간 : 3일</li>
                             <li>본인기여도 : 100%</li>
-                            <li>브라우저 호환성 : </li>
                         </ul>
                         <div class="button-group">
                             <a href="https://drive.google.com/file/d/17WZxJ1Hd8udInq5QdQKNi6-NXBunlQyV/view?usp=drive_link" target="_blank"><button><span>구현화면 보기</span></button></a>
@@ -412,6 +411,95 @@
             </div>
         </div>
     </section>
+
+    <!-- Dog Food Modal -->
+    <div id="dogFoodModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('dogFoodModal')">&times;</span>
+            <div class="modal-body">
+                <div class="package-design-layout">
+                    <div class="left-content">
+                        <div class="portfolio-header">
+                            <span class="portfolio-credit">da hee - OK Portfolio</span>
+                        </div>
+                        
+                        <h1 class="package-title">WEB DESIGN</h1>
+                        
+                        <div class="project-main-info">
+                            <h2 class="project-name">강아지사료 상세페이지</h2>
+                            
+                            <p class="project-description">
+                                반려동물의 건강을 생각하는 프리미엄 강아지사료 쇼핑몰의 상세페이지 디자인 프로젝트입니다. 
+                                반려동물 주인들이 제품을 선택할 때 중요하게 생각하는 영양성분, 원재료, 급여량 등의 
+                                정보를 직관적이고 시각적으로 표현하여 사용자의 구매 결정을 도울 수 있도록 설계했습니다.
+                            </p>
+                            
+                            <p class="project-description">
+                                깔끔하고 신뢰감 있는 디자인으로 제품의 프리미엄 이미지를 강화하고, 
+                                사용자 친화적인 인터페이스를 통해 정보 전달력을 높였습니다.
+                            </p>
+                        </div>
+                        
+                        <div class="project-details">
+                            <div class="detail-row">
+                                <span class="detail-label">작업기간</span>
+                                <span class="detail-value">3일</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">기여도</span>
+                                <span class="detail-value">개인 100%</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">기술스택</span>
+                                <div class="program-list">
+                                    <span>Adobe Photoshop</span>
+                                </div>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">배포매체</span>
+                                <span class="detail-value">Desktop</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="right-content">
+                        <div class="package-image">
+                            <img src="./img/page1.png" alt="패키지 디자인 이미지" id="mainModalImage">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Original Work Section -->
+                <div class="original-work-section">
+                    <div class="original-work-header">
+                        <h2 class="original-work-title">ORIGINAL WORK</h2>
+                    </div>
+                    
+                    <div class="original-work-grid">
+                        <div class="work-item">
+                            <img src="./img/page1.png" alt="Work 1">
+                        </div>
+                        <div class="work-item">
+                            <img src="./img/page2.png" alt="Work 2">
+                        </div>
+                        <div class="work-item">
+                            <img src="./img/page3.png" alt="Work 3">
+                        </div>
+                        <div class="work-item">
+                            <img src="./img/page4.png" alt="Work 4">
+                        </div>
+                        <div class="work-item">
+                            <img src="./img/page5.png" alt="Work 5">
+                        </div>
+                        <div class="work-item">
+                            <img src="./img/page6.png" alt="Work 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -439,13 +527,25 @@
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <p class="footer-disclaimer">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                <p class="footer-copyright">© 2025 OK DAHEE. All Rights Reserved</p>
             </div>
         </div>
     </footer>
+
+    <!-- Top Button -->
+    <div class="top-button" id="topButton">
+        <span>Top</span>
+    </div>
+
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>

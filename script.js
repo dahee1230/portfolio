@@ -90,3 +90,73 @@ function animateElement(element, properties, duration = 300) {
 
 const tl = gsap.timeline({ repeat: -1 });
 tl.fromTo(".tl1", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.5 }).to(".tl1", { opacity: 0, y: -50, duration: 1 }).fromTo(".tl2", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1.5 }, "-=0.5");
+
+// Modal Functions
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+    
+    // 디버깅을 위한 콘솔 로그
+    console.log('Modal opened:', modalId);
+    
+    // 간단한 애니메이션으로 변경
+    setTimeout(() => {
+      const modalContent = modal.querySelector('.modal-content');
+      if (modalContent) {
+        modalContent.style.opacity = '1';
+        modalContent.style.transform = 'scale(1)';
+      }
+    }, 10);
+  }
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    console.log('Modal closing:', modalId);
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // 배경 스크롤 복원
+  }
+}
+
+// 모달 외부 클릭 시 닫기
+window.addEventListener('click', function(event) {
+  if (event.target.classList.contains('modal')) {
+    const modalId = event.target.id;
+    closeModal(modalId);
+  }
+});
+
+// ESC 키로 모달 닫기
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const openModal = document.querySelector('.modal[style*="block"]');
+    if (openModal) {
+      closeModal(openModal.id);
+    }
+  }
+});
+
+// Top Button 기능
+document.addEventListener('DOMContentLoaded', function() {
+  const topButton = document.getElementById('topButton');
+  
+  // 스크롤 시 버튼 표시/숨김
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      topButton.classList.add('visible');
+    } else {
+      topButton.classList.remove('visible');
+    }
+  });
+  
+  // 버튼 클릭 시 맨 위로 스크롤
+  topButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});

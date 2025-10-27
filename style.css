@@ -88,7 +88,7 @@ p {
   color: white;
 }
 
-/* From Uiverse.io by Creatlydev */ 
+/* Button from Uiverse.io by Creatlydev */ 
 .button {
   line-height: 1;
   text-decoration: none;
@@ -351,31 +351,11 @@ p {
   opacity: 1;
 }
 
-.leaf-image .leaf-2 {
-  position: absolute;
-  bottom: 20%;
-  left: -8%;
-  width: 100px;
-  height: auto;
-  transform: rotate(-15deg);
-  opacity: 0.7;
-}
-
 /* Profile Section */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 50px 20px;
-
-}
-
-
 .about-main {
     display: flex;
     align-items: center;
     gap: 60px;
-    padding: 100px 0;
     min-height: 80vh;
 }
 
@@ -407,6 +387,7 @@ p {
     font-weight: 900;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    margin-top: 200px;
     text-transform: uppercase;
 }
 
@@ -500,22 +481,7 @@ p {
     box-shadow: 0 8px 20px rgba(255, 138, 138, 0.3);
 }
 
-
-
 /* Skills Section (Charts) */
-
-.section-label {
-  display: block;
-  color: pink;
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
-  font-size: 4.5rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 0 auto 2rem;
-  text-align: center;
-}
-
 .text {
   font-size: 16px;
   font-weight: 900;
@@ -1025,6 +991,7 @@ circle {
 .footer-logo img {
   height: 40px;
   width: auto;
+  margin-top: 50px;
 }
 
 .footer-disclaimer {

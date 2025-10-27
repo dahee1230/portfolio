@@ -836,6 +836,7 @@ circle {
 
 .mock {
   position: relative;
+  z-index: 1;
 }
 
 .crop {
@@ -846,6 +847,7 @@ circle {
   left: 10px;
   top: 10px;
   border-radius: 40px;
+  z-index: 1;
 }
 
 .mock:after {
@@ -855,16 +857,16 @@ circle {
   background-image: url("./img/iphone.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  z-index: 999999;
+  z-index: 3;
   width: 320px;
   height: 620px;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 
 .crop iframe {
-  z-index: 9999999;
-  position: absolute;
+  position: relative;
   display: block;
   border: none;
   width: 300px;
@@ -872,6 +874,7 @@ circle {
   height: 500px;
   top: 50px;
   overflow: hidden;
+  z-index: 2;
 }
 
 .info-item {
@@ -1376,6 +1379,7 @@ circle {
 
 .portfolio-header {
     margin-bottom: 40px;
+    z-index: 9999;
 }
 
 .portfolio-credit {
@@ -1395,7 +1399,7 @@ circle {
 }
 
 .project-main-info {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .project-name {
@@ -1464,6 +1468,8 @@ circle {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Original Work Section */
 .original-work-section {
@@ -1754,4 +1760,63 @@ circle {
     }
     
 
+}
+
+/* Color Palette Styles */
+.color-palette-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.color-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.color-info strong {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.color-code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.color-desc {
+    font-size: 0.75rem;
+    color: #777;
+    line-height: 1.4;
+}
+
+.design-section {
+    margin-bottom: 25px;
+}
+
+.design-section h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
 }
